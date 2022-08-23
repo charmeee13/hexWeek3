@@ -25,26 +25,27 @@
 </head>
 
 <body>
+  <!-- header -->
   <header class="header">
     <div class="container d-flex justify-between">
-      <h1><a class="logo d-inline-block" href="../dist/index.html">眼鏡官網</a></h1>
-      <ul class="header-list d-flex justify-between fz-20 ">
-        <li><a href="../dist/series.html">系列鏡框</a></li>
-        <li><a href="../dist/location.html">門市據點</a></li>
-        <li><a href="../dist/blog.html">部落格</a></li>
-        <li><a href="../dist/question.html">常見問題</a></li>
+      <h1><a class="header-logo d-inline-block" href="../index.html">眼鏡官網</a></h1>
+      <ul class="header-list d-flex justify-between fz-20 mr-24">
+        <li><a href="../series_optical.html">系列鏡框</a></li>
+        <li><a href="../location.html">門市據點</a></li>
+        <li><a href="../blog.html">部落格</a></li>
+        <li><a href="../question.html">常見問題</a></li>
       </ul>
-      <div class="menu">
+      <div class="header-menu">
         <a href="#" class="btn_open"></a>
         <a href="#" class="btn_close"></a>
       </div>
     </div>
     <div class="overlay fz-20">
-      <ul class="d-flex justify-between">
-        <li><a href="../dist/series.html">系列鏡框</a></li>
-        <li><a href="../dist/store.html">門市據點</a></li>
-        <li><a href="../dist/blog.html">部落格</a></li>
-        <li><a href="../dist/question.html">常見問題</a></li>
+      <ul class="d-flex justify-between bg-primary">
+        <li><a href="../series.html">系列鏡框</a></li>
+        <li><a href="../location.html">門市據點</a></li>
+        <li><a href="../blog.html">部落格</a></li>
+        <li><a href="../question.html">常見問題</a></li>
       </ul>
     </div>
   </header>
@@ -63,7 +64,7 @@
 <div class="service bg-warm pb-80 pt-80">
   <div class="container">
     <h2 class="service-title fz-48 bold text-secondary text-center mb-32">用專業的心，做專業的事</h2>
-    <ul class="d-flex text-center">
+    <ul class="service-list d-flex text-center">
       <li class="w-100 mx-12 ">
         <img class="mx-auto" src="./assets/images/home-section2-1.png" alt="img_service">
         <h3 class="fz-24 text-secondary text-center bold mb-8 mt-24">單一價格</h3>
@@ -92,17 +93,17 @@
 <div class="series pb-80 pt-80">
   <div class="container">
     <h2 class="series-title fz-48 text-center bold text-secondary mb-48">經典系列鏡框</h2>
-    <ul class="d-flex text-center">
+    <ul class="series-list d-flex text-center">
       <li class="mx-12">
-        <img src="./assets/images/home-section3-1.png" alt="img_series">
+        <img class="mx-auto" src="./assets/images/home-section3-1.png" alt="img_series">
         <p class="text-primary fz-48 text-center ex-bold italic">OPTICAL</p>
       </li>
       <li class="mx-12">
-        <img src="./assets/images/home-section3-2.png" alt="img_series">
+        <img class="mx-auto" src="./assets/images/home-section3-2.png" alt="img_series">
         <p class="text-primary fz-48 text-center ex-bold italic">SUNGLASSES</p>
       </li>
       <li class="mx-12">
-        <img src="./assets/images/home-section3-3.png" alt="img_series">
+        <img class="mx-auto" src="./assets/images/home-section3-3.png" alt="img_series">
         <p class="text-primary fz-48 text-center ex-bold italic">FUNCTIONAL</p>
       </li>
     </ul>
@@ -131,18 +132,118 @@
       </li>
     </ul>
   </div>
-
 </div>
 
+<!-- recommend -->
+<div class="recommend pb-80 pt-80">
+  <div class="container">
+    <h2 class="recommend-title fz-48 text-center bold text-secondary mb-48">顧客推薦</h2>
+    <ul class="recommend-list d-flex">
+      <li class="recommend-card mx-12">
+        <div class="card-img">
+          <img src="./assets/images/home-section5-1.png" alt="img_comments">
+        </div>
+        <div class="card-body d-flex flex-column justify-between">
+          <div class="card-info">
+            <p class="medium mb-8">Jessy</p>
+            <p class="content">眼鏡品質優良，下次還會想來這邊購買！</p>
+          </div>
+          <span class="fz-14 text-gray">2021/06/20</span>
+        </div>
+      </li>
+
+      <li class="recommend-card mx-12">
+        <div class="card-img">
+          <img src="./assets/images/home-section5-2.png" alt="img_recommend">
+        </div>
+        <div class="card-body d-flex flex-column justify-between">
+          <div class="card-info">
+            <p class="medium mb-8">凱倫</p>
+            <p class="content">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+          </div>
+          <span class="fz-14 text-gray">2021/04/18</span>
+        </div>
+      </li>
+
+      <li class="recommend-card mx-12">
+        <div class="card-img">
+          <img src="./assets/images/home-section5-3.png" alt="img_recommend">
+        </div>
+        <div class="card-body d-flex flex-column justify-between">
+          <div class="card-info">
+            <p class="medium mb-8">悠悠</p>
+            <p class="content">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+          </div>
+          <span class="fz-14 text-gray">2020/12/25</span>
+        </div>
+      </li>
+
+      <li class="recommend-card mx-12">
+        <div class="card-img">
+          <img src="./assets/images/home-section5-4.png" alt="img_recommend">
+        </div>
+        <div class="card-body d-flex flex-column justify-between">
+          <div class="card-info">
+            <p class="medium mb-8">Kyuan</p>
+            <p class="content">服務很好，品質沒有任何問題，非常喜歡。</p>
+          </div>
+          <span class="fz-14 text-gray">2020/10/31</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="contact pb-80 pt-80 bg-warm">
+  <div class="container">
+    <div class="contact-content mx-auto">
+      <h2 class="contact-title fz-48 text-center bold text-secondary mb-48">聯絡我們</h2>
+      <p class="contact-describe fz-20 mb-24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <form action="#" class="contact-form">
+        <ul class="contact-list">
+          <li class="mb-16">
+            <label for="name" class="d-inline-block mb-8">姓名</label>
+            <input type="text" class="input-text w-100 bg-warm" name="name" id="name" placeholder="陳小明">
+          </li>
+          <li class="mb-16">
+            <label for="tel" class="d-inline-block mb-8">聯絡電話</label>
+            <input type="text" class="input-text w-100 bg-warm" name="phone" id="phone" placeholder="0912-345-678">
+          </li>
+          <li class="mb-16">
+            <label for="email" class="d-inline-block mb-8">電子郵件</label>
+            <input type="text" class="input-text w-100 bg-warm" name="email" id="email" placeholder="example@email.com">
+          </li>
+          <li class="mb-16">
+            <label for="option" class="d-inline-block mb-8">意見反應</label>
+            <textarea rows="10" class="input-text w-100 bg-warm" name="option" id="option"
+              placeholder="請輸入您的意見"></textarea>
+          </li>
+          <li class="check-group mb-24 d-flex align-center">
+            <input type="checkbox" class="input-check" name="check" id="check">
+            <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </li>
+
+          <li class="list-button d-flex justify-center">
+            <input type="button" class="input-button w-100 bold bg-primary text-white" value="確認送出">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <!-- footer -->
     <footer class="footer pt-48">
       <div class="container">
         <div class="footer-menu d-flex justify-between">
           <ul class="footer-list d-flex mr-24 fz-16">
-            <li><a href="../dist/index.html">首頁</a></li>
-            <li><a href="../dist/series.html">系列鏡框</a></li>
-            <li><a href="../dist/store.html">門市據點</a></li>
-            <li><a href="../dist/blog.html">部落格</a></li>
-            <li><a href="../dist/question.html">常見問題</a></li>
+            <li><a href="../index.html">首頁</a></li>
+            <li><a href="../series.html">系列鏡框</a></li>
+            <li><a href="../location.html">門市據點</a></li>
+            <li><a href="../blog.html">部落格</a></li>
+            <li><a href="../question.html">常見問題</a></li>
           </ul>
           <ul class="footer-social d-flex ">
             <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt=""></a></li>
@@ -167,8 +268,6 @@
         </div>
       </div>
     </footer>
-
-
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
