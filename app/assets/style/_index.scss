@@ -1,0 +1,267 @@
+//banner
+.banner{
+    //撐開background img 寬高的方法，除了直接用內部元素撐開，就只剩直接設定寬高嗎？
+    background: url('../images/home-header.png') no-repeat center;
+    background-size: cover;
+    height: 787px;
+
+    @include pad {
+        height: 396px;
+    }
+    @include mobile {
+        background: url('../images/home-header-sm.png') no-repeat center;
+        background-size: cover;
+        height: 396px;
+        padding: 40px 0;
+    }
+
+    &-subtitle {
+        @include pad {
+          font-size: 26px;
+        }
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+    &-title {
+        @include pad {
+            font-size: 48px;
+        }
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    &-btn{
+        padding: 5px 8px;
+        @include link-layout;
+    }
+}
+
+//service
+.service{
+    @include mobile {
+        padding: 40px 0;
+    }
+    &-title {
+        @include pad {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    
+    &-list { 
+        @include  desktop-l {
+            flex-wrap: wrap;
+        }
+
+        li{
+            width: 25%;
+            @include desktop-l{
+                width: 48%;
+                margin: 0 auto;
+            }
+            @include mobile {
+                width: 98%;
+                margin-bottom: 24px;
+            }
+        }
+
+        p{
+            text-align: left;
+        }
+    }
+}
+
+//series
+.series{
+    @include mobile {
+        padding: 40px 0;
+    }
+    &-title {
+        @include pad {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    &-list{
+        @include desktop-l {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    li {
+        width: 648px;
+        @include desktop-l {
+            margin-bottom: 24px;
+        }
+        @include pad {
+          width: 98%;
+         }
+         img {
+           @include pad {
+            width: 336px;
+            height: 336px;
+           }
+         }
+        }
+}
+
+//cooperation
+.cooperation {
+    background: url('../images/index-bg-sm.png') no-repeat center fixed;
+    background-size: cover;
+    @include mobile {
+        padding: 40px 0;
+    }
+    &-title {
+        @include pad {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    &-list{
+        @include pad {
+            flex-direction: column;
+        }
+        @include mobile {
+           
+        }
+    }
+    &-card{
+        @include pad {
+            margin-bottom: 24px;
+        }
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+    &-img{
+        @include mobile {
+            .desktop-img{
+                display: none;
+            }
+            .mobile-img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//recommend
+.recommend{
+    @include mobile {
+        padding: 40px 0;
+    }
+    &-title {
+        @include pad {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    
+    &-list{
+        @include pad {
+            flex-wrap: wrap;
+        }
+        //不知道為什麼寫在這邊沒有用
+        // &-card{
+        //     border: 1px solid $light;
+        // }
+    }
+
+    .recommend-card{
+        border: 1px solid $light;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+        @include pad {
+            width: 48%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+        @include mobile {
+            width: 98%;
+            margin-bottom: 16px;
+        }
+        .card-body {
+            height: 205px;
+            padding: 16px;
+          }
+    }
+}
+
+//contact
+.contact{
+
+    @include mobile {
+        padding: 40px 0;
+    }
+    &-content{
+        max-width: 637px;
+        @include pad {
+            max-width: 576px;
+        }
+        @include mobile {
+            max-width: 348px;
+        }
+    }
+    &-title {
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+      }
+    &-describe{
+        @include pad {
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-list {
+    .input-text {
+      padding: 6px 12px;
+      border: 1px solid $dark;
+    }
+
+
+    .list-button {
+        @include pad {
+          margin-top: 48px;
+        }
+    }
+
+    .input-button {
+        border: none;
+        padding: 16px 0;
+        max-width: 416px;
+        cursor: pointer;
+        &:hover{
+          color:#e7cc31;
+        }
+        
+        @include mobile {
+          max-width: 336px;
+        }
+    }
+
+    .input-check {
+        align-self: start; //不會換行
+        border: 1px solid #000;
+        padding: 7px;
+    }
+  
+}

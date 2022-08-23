@@ -1,0 +1,217 @@
+.header{
+    background:$primary;
+    .container{
+        padding: 12px 0px;
+    }
+    &-logo{
+        width: 80px;
+        height: 48.57px;
+        margin-left: 16px;
+        background-image: url(../images/logo-white.png);
+        @include hide-text;
+    }
+    &-list{
+        @include pad{
+            display: none;
+        }
+
+        li{
+            line-height: 30px;
+            margin-left: 64px;
+            @include desktop{
+                margin-left: 25px;
+            }
+        }
+
+        a{
+            display: block;
+            padding: 10px 0px 10px 0px;
+            @include link-layout;
+        }
+
+        .overlay{
+            position: fixed;
+            width: 100%;
+            ul{
+                flex-wrap: wrap;
+                background:$primary;
+                position: absolute;
+                width: 100%;
+            }
+            li{
+               line-height: 30px;
+               width: 50%;
+            }
+            a{
+                display: block;
+                text-align: center;
+                padding: 10px 0px 10px 0px;
+                @include link-layout;
+                border: solid #fff 1px;
+            }
+        }
+    }
+
+    .header-menu{
+        display: none;
+        @include pad{
+            display: inline-block;
+
+            a{
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                margin-right: 16px;
+                &:hover{
+                border: 2px solid white;
+                }
+            }
+            
+            .btn_open{
+                display: inline-block;
+                background-image: url(../images/menu.png);
+            }
+
+            .btn_close{
+                // display: none;
+                display: inline-block;
+                background-image: url(../images/btn_close.png);
+            }
+
+            //吃不到show class
+            // .show{
+            //     .btn_open{
+            //         display: none; 
+            //     }
+            //     .btn_close{
+            //         display: inline-block;
+            //     }
+            // }
+        }
+    }
+    
+    // .menu .show{
+    //     .btn_open{
+    //         display: none; 
+    //     }
+    //     .btn_close{
+    //         display: inline-block;
+    //     }
+    // }
+
+    .overlay{
+        display: none;
+        position: fixed;
+        width: 100%;
+        ul{
+            flex-wrap: wrap;
+            position: absolute;
+            width: 100%;
+        }
+        li{
+           width: 50%;
+        }
+        a{
+            display: block;
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            @include link-layout;
+            border: solid #fff 1px;
+        }
+    }
+    
+}
+
+
+
+
+
+.footer{
+    background:$primary;
+    &-menu{ 
+        a{
+            @include link-layout;
+        }
+        @include pad{
+            max-height: 0px;
+            flex-direction: column;
+        }
+    }
+
+    &-list{
+        @include pad{
+            display: none;
+        }
+        li{
+            margin-right: 24px;
+            padding: 10px 0px 10px 0px;
+            @include pad {
+                margin-right: 16px;
+            }
+        }
+
+    }
+
+    &-social{
+        @include pad{
+            align-self: flex-end;
+        }
+    }
+
+    img {
+        width: 48px;
+        height: 48px;
+        margin-left: 32px;
+        @include desktop{
+          margin-left: 16px;
+        }
+        @include pad{
+          margin-left: 8px;
+        }
+      }
+
+    h3{
+        font-size: 36px;
+        color: white;
+            @include pad {
+                font-size: 16px;
+            }
+                i{
+                    margin-right: 22px;
+                    @include pad {
+                        font-size: 10px;
+                    }
+                }
+                a{
+                    @include link-layout
+                }
+        }
+
+    .mail{
+        border-bottom: 1px solid #fff;
+    }
+
+    .copyright{
+        color: #fff;
+        line-height: 21px;
+        li{
+            @include link-layout;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 21px;
+            @include pad{
+                margin-left: 0px;
+                margin-top: 8px;
+              }
+        }
+        @include pad{
+            flex-direction: column;
+          }
+
+        &-list{
+        @include pad{
+            flex-direction: column;       
+          }
+        }
+    }
+}

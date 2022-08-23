@@ -1,23 +1,9 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "./reset.scss";
+@import "./variable.scss";
+@import "./utilities.scss";
+@import "./mixin.scss";
+@import "./grid.scss"; 
+@import "./layout.scss";
+@import "./index.scss";
+@import "./location.scss";
+@import "./series.scss";

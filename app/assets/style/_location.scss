@@ -1,0 +1,60 @@
+.location{
+    @include mobile{
+        padding: 40px 0 40px;
+    }
+
+    &-title {
+        border-left: 8px solid $primary;
+        padding-left: 8px;
+        @include pad{
+          margin-bottom:24px;
+        }
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+
+    &-label{
+    @include mobile {
+        font-size: 16px;
+        }
+    }
+
+    &-selection select {
+        font-size: 18px;
+        padding: 6px 12px;
+        border: 1px solid #CED4DA;
+        width: 304px;
+    }
+}
+
+.location-card{
+    width: 31%;
+    @include pad{
+        width: 45%;
+        padding-bottom:24px;
+    }
+    @include mobile{
+        width: 98%;
+    }
+
+    .card-wrap {
+        border: 1px solid #00000020;
+    }
+
+    .card-title {
+        border-bottom: 1px solid #00000020;
+      }
+
+    .card-body{
+        padding: 16px 24px;
+    }
+
+    .card-body li i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 30px;
+      }
+}
